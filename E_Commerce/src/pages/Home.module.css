@@ -1,0 +1,10 @@
+.container
+{
+  
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 125rem;
+  min-width: 250px;
+  justify-content: space-evenly;
+  max-height:auto;
+}

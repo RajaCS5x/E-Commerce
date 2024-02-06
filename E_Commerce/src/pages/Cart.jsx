@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-function Cart() {
+import { Container } from 'react-bootstrap';
+import CartLayout from './CartLayout';
+
+function Cart({ items, removeFromCart }) {
   return (
-    <div>Cart</div>
-  )
+    <Container>
+      {items.map((item) => (
+        <CartLayout item={item} removeFromCart={removeFromCart}/>
+      
+    ))}
+    </Container>
+  );
 }
 
-export default Cart
+export default Cart;

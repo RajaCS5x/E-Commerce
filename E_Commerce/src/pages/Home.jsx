@@ -1,14 +1,18 @@
 import React from 'react'
 import { Container} from 'react-bootstrap';
 import Product from '../components/Product'
+import styles from './Home.module.css'
+function Home({products,addToCart}) {
 
-function Home({products}) {
+  
+ 
+
   return (
-    <Container style={{display:'flex',flexWrap:'wrap',minWidth:'250px',justifyContent:"space-around",minHeight:"38rem"}}>
+    <Container className={styles.container}>
    
         {products.map((item) => (
         
-            <Product item={item} />
+            <Product item={item} addToCart={addToCart} />
           
         ))}
       

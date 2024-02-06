@@ -12,10 +12,26 @@ import {useState} from "react"
 export function App() {
  
   const [products, setproducts] = useState(productslist);
+
+  const addToCart = (itemId) => {
+    setproducts((prevItems) =>
+      prevItems.map((item) => (item.id === itemId ? { ...item, inCart: true } : item))
+    );
+  };
+
+  const removeFromCart = (itemId) => {
+    setproducts((prevItems) =>
+      prevItems.map((item) => (item.id === itemId ? { ...item, inCart: false } : item))
+    );
+  };
+
+
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
-      <Route index element={<Home products={products}/>}/>
-      <Route path="Cart" element={<Cart/>}/>
+      <Route index element={<Home products={products} addToCart={addToCart} />}/>
+      <Route path="Cart" element={<Cart 
+     items={products.filter((item) => item.inCart) } removeFromCart={removeFromCart}
+      />}/>
     </Route>
   ))
   return (

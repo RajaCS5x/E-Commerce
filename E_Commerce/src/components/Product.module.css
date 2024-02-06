@@ -1,0 +1,31 @@
+.card{
+  width: 20.2rem;
+  
+  margin: .6rem;
+  padding: .6rem;
+}
+
+.image {
+  margin-left: 2rem;
+  border: 1px solid white;
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+  padding: .2rem;
+}
+.cardBody
+{
+  
+  text-align: center;
+  
+  
+}
+.title
+{
+  margin:0 2.2rem;
+  font-size: large;
+  width: 80%;
+  font-weight: 700;
+  background-color: #565656;
+  border-radius: 2rem;
+}
