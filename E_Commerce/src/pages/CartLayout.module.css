@@ -13,7 +13,9 @@
   padding: .2rem;
   border-radius: 2rem;
   background-color: aliceblue;
+  transition: all .3s;
 }
+
 .cardBody
 {
   text-align: center;
