@@ -1,0 +1,53 @@
+.navbar
+{
+  background:  linear-gradient(90deg, rgba(52,51,51,1) 24%, rgba(180,106,34,1) 86%);
+  display: flex;
+  min-width: 250px;
+  justify-content: space-between;
+  padding: .3rem .5rem;
+  box-shadow: 0 0 1rem black;
+  list-style-type: none;
+  border-radius: 1rem;
+  
+}
+.menu
+{
+  display: flex;
+  min-width: 60%;
+  justify-content:space-around ;
+  list-style: none;
+}
+.item
+{
+  font-size: larger;
+ text-decoration: none;
+  color: aliceblue;
+  transition: all 0.2s;
+}
+.item:hover{
+  color:black;
+ 
+}
+.heading
+{
+  font-size: xx-large;
+  font-weight: 600;
+  transition: all .3s;
+  cursor: pointer;
+.head{
+  color:rgba(180,106,34,1);
+  padding: .4rem;
+}
+}
+
+.heading:hover{
+  color: rgba(180,106,34,1);
+  .head{
+    color:#fff;
+  }
+}
+.homeicon
+{
+font-size: x-large;
+color: white;
+}
